@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhoomika H A | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8ff;
+    color: #172554;
+    line-height: 1.7;
+}
+
+header {
+    background: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 12px #dce5f5;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+nav a {
+    color: #243b67;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background: linear-gradient(120deg, #eaf2ff, white);
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #53627c;
+    font-size: 17px;
+}
+
+.tag {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #1e3a8a;
+}
+
+.about {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    color: #53627c;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #dce5f5;
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #53627c;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+.skills span {
+    background: #e3edff;
+    color: #1d4ed8;
+    padding: 12px 20px;
+    border-radius: 25px;
+}
+
+.contact {
+    text-align: center;
+    background: #eaf2ff;
+}
+
+.contact a:not(.btn) {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #172554;
+    color: white;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    section {
+        padding: 55px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Bhoomika.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+
+<div class="hero" id="home">
+    <div>
+        <p class="tag">HELLO, WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hi, I'm <span>Bhoomika H A</span></h1>
+
+        <h2>Engineering Student | Data Science</h2>
+
+        <p>
+            I'm a Data Science engineering student interested in
+            technology, learning new skills and building practical
+            projects. Welcome to my personal portfolio!
+        </p>
+
+        <a class="btn" href="#projects">Explore My Projects</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            I am a third-year engineering student specializing in
+            Data Science at Atria Institute of Technology, Bengaluru.
+            I enjoy learning about programming, artificial intelligence
+            and emerging technologies. I am continuously working to
+            improve my technical knowledge and practical skills.
+        </p>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Bachelor of Engineering</h3>
+            <p>Data Science</p>
+            <p>Atria Institute of Technology, Bengaluru</p>
+            <p>Currently in Third Year</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+    <h2 class="section-title">My Skills & Learning</h2>
+
+    <div class="skills">
+        <span>Python</span>
+        <span>Data Science</span>
+        <span>Artificial Intelligence</span>
+        <span>Machine Learning Fundamentals</span>
+        <span>DBMS</span>
+        <span>Cloud Computing</span>
+        <span>GitHub</span>
+        <span>Azure Fundamentals</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Review Pipeline</h3>
+
+            <p>
+                A Python-based code review and refactoring project
+                designed to analyze source code, identify possible
+                issues and generate code review reports.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Crop Insurance System</h3>
+
+            <p>
+                Team project: A Python-based backend that processes
+                CSV data, applies crop insurance business rules
+                and generates premium and claim reports.
+            </p>
+
+            <p><small>Team: T009</small></p>
+
+            <a href="https://github.com/ayaan44-ai/T009-PS-097"
+               target="_blank">View Project</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>Thank you for visiting my portfolio!</p>
+
+    <p>Let's connect and learn together.</p>
+
+    <p>
+        Email:
+        <a href="mailto:bhoomikaha9@gmail.com">
+            bhoomikaha9@gmail.com
+        </a>
+    </p>
+
+    <a class="btn"
+       href="https://github.com/bhoomika5443"
+       target="_blank">
+       Visit My GitHub
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Bhoomika H A | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
