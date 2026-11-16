@@ -14,168 +14,237 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f5f8ff;
-    color: #172554;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #faf8ff;
+    color: #30234a;
     line-height: 1.7;
 }
 
 header {
-    background: white;
+    background: #ffffff;
     padding: 18px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    box-shadow: 0 2px 12px #dce5f5;
-    z-index: 10;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(91, 52, 145, 0.10);
 }
 
 .logo {
-    font-size: 23px;
+    font-size: 25px;
     font-weight: bold;
-    color: #2563eb;
+    color: #7542b8;
 }
 
 nav a {
-    color: #243b67;
     text-decoration: none;
+    color: #493765;
     margin-left: 18px;
     font-size: 14px;
+    font-weight: 600;
 }
 
 nav a:hover {
-    color: #2563eb;
+    color: #a36be0;
 }
 
 .hero {
-    min-height: 85vh;
+    min-height: 88vh;
     display: flex;
     align-items: center;
-    padding: 70px 10%;
-    background: linear-gradient(120deg, #eaf2ff, white);
+    padding: 80px 10%;
+    background: linear-gradient(120deg, #eee4ff, #ffffff, #f6efff);
 }
 
-.hero h1 {
-    font-size: 48px;
-    line-height: 1.2;
-    margin: 15px 0;
-}
-
-.hero h1 span {
-    color: #2563eb;
-}
-
-.hero p {
-    max-width: 600px;
-    color: #53627c;
-    font-size: 17px;
+.hero-content {
+    max-width: 750px;
 }
 
 .tag {
-    color: #2563eb;
+    color: #9255d0;
     font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin: 20px 0;
+    color: #34204f;
+}
+
+.hero h1 span {
+    color: #8952c7;
+}
+
+.hero h2 {
+    font-size: 23px;
+    color: #67468c;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #655a75;
+    font-size: 17px;
+    max-width: 620px;
 }
 
 .btn {
     display: inline-block;
     margin-top: 25px;
-    background: #2563eb;
+    padding: 13px 28px;
+    background: #8650c4;
     color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
+    border-radius: 30px;
     text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #5e3294;
+    transform: translateY(-3px);
 }
 
 section {
-    padding: 75px 10%;
+    padding: 80px 10%;
 }
 
 .section-title {
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 35px;
-    color: #1e3a8a;
+    color: #653a98;
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: #b78be5;
+    margin: 12px auto;
+    border-radius: 5px;
 }
 
 .about {
-    text-align: center;
-    max-width: 800px;
+    max-width: 850px;
     margin: auto;
-    color: #53627c;
+    text-align: center;
+    color: #655a75;
+    font-size: 17px;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
 }
 
 .card {
     background: white;
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: 0 5px 20px #dce5f5;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 5px 22px rgba(91, 52, 145, 0.10);
+    border: 1px solid #eee5fa;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 28px rgba(91, 52, 145, 0.17);
 }
 
 .card h3 {
-    color: #2563eb;
-    margin-bottom: 10px;
+    color: #804bb7;
+    margin-bottom: 12px;
+    font-size: 21px;
 }
 
 .card p {
-    color: #53627c;
+    color: #655a75;
+    margin-bottom: 8px;
+}
+
+.card a {
+    color: #824bc0;
+    font-weight: bold;
 }
 
 .skills {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 14px;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .skills span {
-    background: #e3edff;
-    color: #1d4ed8;
-    padding: 12px 20px;
-    border-radius: 25px;
+    background: #eee3fb;
+    color: #663b96;
+    padding: 12px 23px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 1px solid #dfc9f4;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: #8650c4;
+    color: white;
 }
 
 .contact {
+    background: #eee5fb;
     text-align: center;
-    background: #eaf2ff;
+}
+
+.contact p {
+    color: #5c4b72;
+    margin: 10px 0;
 }
 
 .contact a:not(.btn) {
-    color: #2563eb;
+    color: #7542b8;
+    font-weight: bold;
     text-decoration: none;
 }
 
 footer {
-    text-align: center;
-    padding: 22px;
-    background: #172554;
+    background: #382451;
     color: white;
+    text-align: center;
+    padding: 25px;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 750px) {
     header {
         flex-direction: column;
-        gap: 12px;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     nav a {
-        margin: 5px;
-        font-size: 12px;
+        margin: 5px 8px;
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
     }
 
     section {
-        padding: 55px 7%;
+        padding: 60px 7%;
     }
 }
 </style>
@@ -196,44 +265,43 @@ footer {
     </nav>
 </header>
 
-<!-- HOME -->
-
+<!-- HOME SECTION -->
 <div class="hero" id="home">
-    <div>
-        <p class="tag">HELLO, WELCOME TO MY PORTFOLIO</p>
+    <div class="hero-content">
+        <p class="tag">WELCOME TO MY PORTFOLIO</p>
 
-        <h1>Hi, I'm <span>Bhoomika H A</span></h1>
+        <h1>Hello, I'm <span>Bhoomika H A</span></h1>
 
         <h2>Engineering Student | Data Science</h2>
 
         <p>
-            I'm a Data Science engineering student interested in
-            technology, learning new skills and building practical
-            projects. Welcome to my personal portfolio!
+            I am a passionate engineering student interested in
+            technology, programming and artificial intelligence.
+            I enjoy learning new things and developing practical
+            projects to improve my knowledge and skills.
         </p>
 
-        <a class="btn" href="#projects">Explore My Projects</a>
+        <a class="btn" href="#projects">Explore My Work</a>
     </div>
 </div>
 
-<!-- ABOUT -->
-
+<!-- ABOUT SECTION -->
 <section id="about">
     <h2 class="section-title">About Me</h2>
 
     <div class="about">
         <p>
-            I am a third-year engineering student specializing in
-            Data Science at Atria Institute of Technology, Bengaluru.
-            I enjoy learning about programming, artificial intelligence
-            and emerging technologies. I am continuously working to
-            improve my technical knowledge and practical skills.
+            I am a third-year Data Science engineering student
+            at Atria Institute of Technology, Bengaluru.
+            I am interested in programming, Artificial Intelligence,
+            Machine Learning and emerging technologies.
+            I believe in continuous learning and improving my
+            technical and personal skills through practical experience.
         </p>
     </div>
 </section>
 
-<!-- EDUCATION -->
-
+<!-- EDUCATION SECTION -->
 <section id="education">
     <h2 class="section-title">Education</h2>
 
@@ -241,16 +309,16 @@ footer {
         <div class="card">
             <h3>Bachelor of Engineering</h3>
             <p>Data Science</p>
-            <p>Atria Institute of Technology, Bengaluru</p>
-            <p>Currently in Third Year</p>
+            <p>Atria Institute of Technology</p>
+            <p>Bengaluru, Karnataka</p>
+            <p>Third Year</p>
         </div>
     </div>
 </section>
 
-<!-- SKILLS -->
-
+<!-- SKILLS SECTION -->
 <section id="skills">
-    <h2 class="section-title">My Skills & Learning</h2>
+    <h2 class="section-title">My Skills</h2>
 
     <div class="skills">
         <span>Python</span>
@@ -264,8 +332,7 @@ footer {
     </div>
 </section>
 
-<!-- PROJECTS -->
-
+<!-- PROJECTS SECTION -->
 <section id="projects">
     <h2 class="section-title">My Projects</h2>
 
@@ -276,8 +343,8 @@ footer {
 
             <p>
                 A Python-based code review and refactoring project
-                designed to analyze source code, identify possible
-                issues and generate code review reports.
+                focused on analyzing source code, identifying
+                possible issues and generating code review reports.
             </p>
         </div>
 
@@ -285,12 +352,12 @@ footer {
             <h3>Crop Insurance System</h3>
 
             <p>
-                Team project: A Python-based backend that processes
-                CSV data, applies crop insurance business rules
+                A team-based Python backend project that processes
+                CSV files, applies crop insurance business rules
                 and generates premium and claim reports.
             </p>
 
-            <p><small>Team: T009</small></p>
+            <p><strong>Team: T009</strong></p>
 
             <a href="https://github.com/ayaan44-ai/T009-PS-097"
                target="_blank">View Project</a>
@@ -299,14 +366,12 @@ footer {
     </div>
 </section>
 
-<!-- CONTACT -->
-
+<!-- CONTACT SECTION -->
 <section id="contact" class="contact">
     <h2 class="section-title">Contact Me</h2>
 
     <p>Thank you for visiting my portfolio!</p>
-
-    <p>Let's connect and learn together.</p>
+    <p>I'm always happy to connect and learn.</p>
 
     <p>
         Email:
